@@ -16,20 +16,12 @@ sierpinski(2, height - 2, length);
 rotation *= 0.999;
 
 }
-public void mouseDragged()//optional
+public void mouseClicked()//optional
 {
     rect(0, 0, width, height);
     bob = (int)(Math.random()*255 + 1);
     sandy = (int)(Math.random()*255 + 1);
-    if(length == 200) {
-        length = 300;
-    } else if(length == 300) {
-        length = 400;
-    }else if(length == 400) {
-        length = 500;
-    } else if(length == 500) {
-         length = 600;
-    }else {}
+   length= length + 100;
 }
 public void sierpinski(int x, int y, int len) 
 {
@@ -43,6 +35,10 @@ fill(0,0,0);
     sierpinski(x+len/4,y-len/2,len/2);
   }
 }
+
+
+
+
 
 
 
