@@ -18,7 +18,6 @@ rotation *= 0.999;
 }
 public void mouseClicked()//optional
 {
-    rect(0, 0, width, height);
     bob = (int)(Math.random()*255 + 1);
     sandy = (int)(Math.random()*255 + 1);
    length= length + 100;
